@@ -1,0 +1,40 @@
+.btn {
+	margin:0;
+	color: #fff;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	font-size: 11px;
+	font-weight: 600;
+	line-height: 20px;
+	padding: 5px 20px;
+	text-align: center;
+	position: relative;
+	background: #bf0040;
+	display: inline-block;
+	text-decoration: none;
+	vertical-align: middle;
+	background-image: none;
+	text-transform: uppercase;
+	touch-action: manipulation;
+	@include border-radius(2px);
+	@include transition(.3s);
+
+	&:hover {
+		color: #fff;
+		background: #e11358;
+		text-decoration: none;
+	}
+
+	&:active {
+		top: 1px;
+	}
+}
+
+.btn-large {
+	width: 100%;
+	font-size: 14px;
+	font-weight: 700;
+	padding: 16px 40px;
+	margin-top: 20px;
+}

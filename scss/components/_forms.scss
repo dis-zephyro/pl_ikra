@@ -1,0 +1,51 @@
+.form-control {
+	margin: 0;
+	width: 100%;
+	color: #888;
+	outline: none;
+	font-size: 11px;
+	line-height: 20px;
+	padding: 4px 20px;
+	display: inline-block;
+	background: transparent;
+	border: 1px solid #dcdcdc;
+	@include placeholder(#888);
+	@include border-radius(2px);
+
+	&::-ms-clear {
+		display: none;
+		width: 0;
+		height: 0;
+	}
+
+	&:focus {
+		@include placeholder(transparent);
+	}
+}
+
+.form-large {
+	font-size: 14px;
+	padding: 10px 20px;
+}
+
+.form-tel {
+	padding-left: 45px;
+	background: url("../img/icon-phone.png") 10px 50% no-repeat;
+}
+
+.form-name {
+	padding-left: 45px;
+	background: url("../img/icon-user.png") 10px 50% no-repeat;
+}
+
+
+
+
+label {
+	font-weight: 400;
+	display: block;
+}
+
+.form-group {
+	margin-bottom: 10px;
+}
