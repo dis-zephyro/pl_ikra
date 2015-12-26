@@ -55,4 +55,7 @@ $('.close').click(function (event) {
     panel.toggleClass('').toggleClass('collapse');
 });
 
-//Калькулятор
+
+$(".btn-modal").fancybox({
+    'padding' : 0
+});

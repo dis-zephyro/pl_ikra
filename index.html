@@ -70,7 +70,7 @@
                                         <li class="col3">
                                             <div class="number volume">
                                                 <span class="prev"><i class="fa fa-minus-square"></i></span>
-                                                <input type="text" name="volume1" value="300"/>
+                                                <input type="text" name="volume1" value="300" disabled />
                                                 <span class="next"><i class="fa fa-plus-square"></i></span>
                                             </div>
                                         </li>
@@ -82,7 +82,7 @@
                                             </div>
                                         </li>
                                         <li class="col5">
-                                            <span class="price"><input type="text" name="price1" value="900"/>р.</span>
+                                            <span class="price"><input type="text" name="price1" value="900" disabled />р.</span>
                                             <span class="close-text">раскрыть</span>
                                         </li>
                                         <li class="col6">
@@ -96,7 +96,7 @@
                                         <li class="col3">
                                             <div class="number volume">
                                                 <span class="prev"><i class="fa fa-minus-square"></i></span>
-                                                <input type="text" name="volume2" value="300"/>
+                                                <input type="text" name="volume2" value="300" disabled />
                                                 <span class="next"><i class="fa fa-plus-square"></i></span>
                                             </div>
                                         </li>
@@ -108,8 +108,9 @@
                                             </div>
                                         </li>
                                         <li class="col5">
-                                            <span class="price"><input type="text" name="price2" value="900"/>р.</span>
+                                            <span class="price"><input type="text" name="price2" value="900" disabled />р.</span>
                                             <span class="close-text">раскрыть</span>
+                                            <span class="not">нет в наличии</span>
                                         </li>
                                         <li class="col6">
                                             <span class="close"><i class="fa fa-caret-up"></i></span>
@@ -122,7 +123,7 @@
                                         <li class="col3">
                                             <div class="number volume">
                                                 <span class="prev"><i class="fa fa-minus-square"></i></span>
-                                                <input type="text" name="volume3" value="300"/>
+                                                <input type="text" name="volume3" value="300" disabled />
                                                 <span class="next"><i class="fa fa-plus-square"></i></span>
                                             </div>
                                         </li>
@@ -134,8 +135,9 @@
                                             </div>
                                         </li>
                                         <li class="col5">
-                                            <span class="price"><input type="text" name="price3" value="900"/>р.</span>
+                                            <span class="price"><input type="text" name="price3" value="900" disabled />р.</span>
                                             <span class="close-text">раскрыть</span>
+                                            <span class="not">нет в наличии</span>
                                         </li>
                                         <li class="col6">
                                             <span class="close"><i class="fa fa-caret-up"></i></span>
@@ -148,7 +150,7 @@
                                         <li class="col3">
                                             <div class="number volume">
                                                 <span class="prev"><i class="fa fa-minus-square"></i></span>
-                                                <input type="text" name="volume4" value="300"/>
+                                                <input type="text" name="volume4" value="300"  disabled />
                                                 <span class="next"><i class="fa fa-plus-square"></i></span>
                                             </div>
                                         </li>
@@ -160,8 +162,9 @@
                                             </div>
                                         </li>
                                         <li class="col5">
-                                            <span class="price"><input type="text" name="price4" value="900"/>р.</span>
+                                            <span class="price"><input type="text" name="price4" value="900" disabled />р.</span>
                                             <span class="close-text">раскрыть</span>
+                                            <span class="not">нет в наличии</span>
                                         </li>
                                         <li class="col6">
                                             <span class="close"><i class="fa fa-caret-up"></i></span>
@@ -174,7 +177,7 @@
                                         <li class="col3">
                                             <div class="number volume">
                                                 <span class="prev"><i class="fa fa-minus-square"></i></span>
-                                                <input type="text" name="volume5" value="300"/>
+                                                <input type="text" name="volume5" value="300" disabled />
                                                 <span class="next"><i class="fa fa-plus-square"></i></span>
                                             </div>
                                         </li>
@@ -186,21 +189,22 @@
                                             </div>
                                         </li>
                                         <li class="col5">
-                                            <span class="price"><input type="text" name="price5" value="900"/>р.</span>
+                                            <span class="price"><input type="text" name="price5" value="900" disabled />р.</span>
                                             <span class="close-text">раскрыть</span>
+                                            <span class="not">нет в наличии</span>
                                         </li>
                                         <li class="col6">
                                             <span class="close"><i class="fa fa-caret-up"></i></span>
                                         </li>
                                     </ul>
 
-                                    <ul class="row">
+                                    <ul class="row not-available">
                                         <li class="col1"></li>
                                         <li class="col2">Кижуча</li>
                                         <li class="col3">
                                             <div class="number volume">
                                                 <span class="prev"><i class="fa fa-minus-square"></i></span>
-                                                <input type="text" name="volume6" value="300"/>
+                                                <input type="text" name="volume6" value="300" disabled />
                                                 <span class="next"><i class="fa fa-plus-square"></i></span>
                                             </div>
                                         </li>
@@ -212,8 +216,9 @@
                                             </div>
                                         </li>
                                         <li class="col5">
-                                            <span class="price"><input type="text" name="price6" value="900"/>р.</span>
+                                            <span class="price"><input type="text" name="price6" value="900" disabled />р.</span>
                                             <span class="close-text">раскрыть</span>
+                                            <span class="not">нет в наличии</span>
                                         </li>
                                         <li class="col6">
                                             <span class="close"><i class="fa fa-caret-up"></i></span>
@@ -271,8 +276,17 @@
         </footer>
 
         <div class="hide">
-            <div class="map-box" id="map-box">
-
+            <div class="modal" id="callback">
+                <div class="modal-title">Обратный звонок</div>
+                <form class="form-modal clearfix">
+                    <div class="form-group">
+                        <input type="text" class="form-control form-large form-name" placeholder="Введите имя">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control form-large form-tel" placeholder="Введите телефон">
+                    </div>
+                    <button type="submit" class="btn btn-large">отправить</button>
+                </form>
             </div>
         </div>
 

@@ -2552,6 +2552,7 @@ label {
 html {
   width: 100%;
   height: 100%;
+  min-height: 950px;
   position: relative; }
 
 .main {
@@ -2824,19 +2825,36 @@ html {
         width: 160px; }
       .calculation .row li.col5 {
         padding-right: 10px; }
-        .calculation .row li.col5 .price input[type="text"] {
-          margin: 0;
-          padding: 0;
-          width: 55px;
-          border: none;
-          outline: none;
-          color: #000;
-          font-weight: 600;
-          font-size: 20px;
-          text-align: right;
-          display: inline-block;
-          background: transparent; }
+        .calculation .row li.col5 .price {
+          -webkit-touch-callout: none;
+          -webkit-user-select: none;
+          -khtml-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          -o-user-select: none;
+          user-select: none; }
+          .calculation .row li.col5 .price input[type="text"] {
+            margin: 0;
+            padding: 0;
+            width: 55px;
+            border: none;
+            outline: none;
+            color: #000;
+            font-weight: 600;
+            font-size: 20px;
+            text-align: right;
+            display: inline-block;
+            background: transparent;
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            -o-user-select: none;
+            user-select: none; }
         .calculation .row li.col5 .close-text {
+          display: none; }
+        .calculation .row li.col5 .not {
           display: none; }
       .calculation .row li.col6 {
         width: 40px;
@@ -2864,6 +2882,25 @@ html {
           display: none; }
         .calculation .row.collapse li.col5 .close-text {
           display: block; }
+    .calculation .row.not-available li.col2 {
+      border-right: none; }
+    .calculation .row.not-available li.col3 {
+      display: none; }
+    .calculation .row.not-available li.col4 {
+      display: none; }
+    .calculation .row.not-available li.col5 {
+      text-align: center;
+      font-size: 11px;
+      color: #a8a8a8;
+      border-right: none; }
+      .calculation .row.not-available li.col5 .price {
+        display: none; }
+      .calculation .row.not-available li.col5 .close-text {
+        display: none; }
+      .calculation .row.not-available li.col5 .not {
+        display: block; }
+    .calculation .row.not-available li.col6 i {
+      display: none; }
 
 .contact-form {
   width: 270px;
@@ -2915,11 +2952,25 @@ html {
       line-height: 30px; }
 
 .number.volume input[type="text"] {
-  width: 50px; }
+  width: 50px;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none; }
 .number span {
   font-size: 16px;
   color: #464646;
-  cursor: pointer; }
+  cursor: pointer;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none; }
   .number span:hover {
     color: #c7121b; }
 .number input[type="text"] {
@@ -2930,6 +2981,26 @@ html {
   font-size: 18px;
   line-height: 20px;
   text-align: center;
-  background: transparent; }
+  background: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none; }
+
+.modal {
+  width: 360px;
+  padding: 40px 30px; }
+  .modal .modal-title {
+    color: #000;
+    font-size: 26px;
+    font-weight: 900;
+    line-height: 30px;
+    text-align: center;
+    font-family: "PFBeauSansPro";
+    text-transform: uppercase;
+    margin: 0 -20px 30px -20px; }
 
 /*# sourceMappingURL=main.css.map */
